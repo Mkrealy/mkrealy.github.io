@@ -35,9 +35,7 @@ body {
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
-    /* margin:20% 20px auto 40px; */
     border-bottom: 1px solid var(--c);
-    /* border: none; */
     text-align: center;
 }
 
@@ -65,10 +63,6 @@ body {
 .slider_button:hover{
     color: black;
 }
-#navbutton, .slider_button{
-
-}
-
 .nav ul li:hover span {
     transform: translateY(0) scale(1);
 }
@@ -119,7 +113,6 @@ body {
 .container{
     min-width: 100vh;
     width: 100%;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #523d3d;
@@ -133,8 +126,13 @@ body {
     transition: 0.5s;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
 
 }
 .nav_mobile{
@@ -261,6 +259,10 @@ body {
 .navigation ul li.active a.text{
     color:var(--color)
 }
-.nav_mobile{
+@media (min-wdith:768px)
+    {
+        .container .pc_off{
+            display: none;
+    }
 
 }
