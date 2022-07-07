@@ -119,7 +119,7 @@ body {
 }
 .navigation{
     position: fixed;
-    inset: 50px 0 -60px 0;
+    inset:50px 0 -60px 0;
     width: 0px;
     min-height: 500px;
     background: rgb(255, 200, 0);
@@ -140,47 +140,16 @@ body {
 }
 .navigation.open{
     width: 100%;
+    /* height: 100%; */
 }
-.navigation .menu-toggle{
-    position: absolute   ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 600px;
-    cursor: pointer;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 0 20px;
-}
-.navigation .menu-toggle::before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #333;
-    transform:translateX(-8px);
-    transition: 0.5s;
-}
-.navigation.open .menu-toggle::after{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #333;
-    transform: translateY(8px);
-    transition: 0.5s;
-    box-shadow: 0 -8px 0 #333;
-}
-.navigation.open .menu-toggle::after{
-    transform: translateY(0) rotate(-45deg);
-    box-shadow: none;
-}
+/*  */
 .navigation ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 100px;
     width: 100%;
+    height: 100%;
+    font-size: 32px;
 }
 .navigation ul li {
     list-style: none;
@@ -258,6 +227,9 @@ body {
 }
 .navigation ul li.active a.text{
     color:var(--color)
+}
+.text{
+    font-size: 30px;
 }
 @media (min-wdith:768px)
     {
