@@ -345,7 +345,7 @@
 
 
 .main-content {
-    padding: 7ch;
+    padding: 10px;
     color: rgb(211, 211, 211);
     text-align: center;
 
@@ -794,4 +794,7 @@
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+}
+h2{
+    color: #999;
 }
